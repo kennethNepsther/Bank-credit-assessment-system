@@ -9,7 +9,7 @@ public class UriUtil {
 
     public static URI addIdToCurrentUrlPath(String nif) {
         return ServletUriComponentsBuilder.fromCurrentRequest()
-                .path("/{id}")
+                .path("/{nif}")
                 .buildAndExpand(nif)
                 .toUri();
     }
