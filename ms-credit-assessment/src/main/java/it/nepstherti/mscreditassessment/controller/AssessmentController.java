@@ -1,6 +1,7 @@
 package it.nepstherti.mscreditassessment.controller;
 
 import it.nepstherti.mscreditassessment.domain.ClientStatus;
+import it.nepstherti.mscreditassessment.exception.MicroserviceErrorConnectionException;
 import it.nepstherti.mscreditassessment.service.CreditAssessmentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +21,7 @@ public class AssessmentController {
     }
 
     @GetMapping(value = "/client-status", params = "nif")
-    public ResponseEntity<ClientStatus> clientStatus(@RequestParam("nif") String nif) {
+    public ResponseEntity<ClientStatus> clientStatus(@RequestParam("nif") String nif)  {
         ClientStatus clientStatusResponse = assessmentService.getClientStatus(nif);
 
         return ResponseEntity.ok(clientStatusResponse);

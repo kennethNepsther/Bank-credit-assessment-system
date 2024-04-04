@@ -12,7 +12,6 @@ public interface IClientService {
     List<ClientModel> findAllClients();
     ClientResponse findClientById(Long clientId);
     ClientResponse findByNif(String nif);
-    // ClientModel findClientById(Long clientId);
     @Transactional
     ClientModel saveClient(ClientModel clientModel);
     ClientModel updateClient(ClientModel clientModel);

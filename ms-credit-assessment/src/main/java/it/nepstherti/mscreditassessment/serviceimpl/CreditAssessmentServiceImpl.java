@@ -1,12 +1,15 @@
 package it.nepstherti.mscreditassessment.serviceimpl;
 
+import feign.FeignException;
 import it.nepstherti.mscreditassessment.clients.ClientResourceClient;
 import it.nepstherti.mscreditassessment.clients.CreditCardResourceClient;
 import it.nepstherti.mscreditassessment.domain.ClientCards;
 import it.nepstherti.mscreditassessment.domain.ClientData;
 import it.nepstherti.mscreditassessment.domain.ClientStatus;
+import it.nepstherti.mscreditassessment.exception.MicroserviceErrorConnectionException;
 import it.nepstherti.mscreditassessment.service.CreditAssessmentService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -20,15 +23,29 @@ public class CreditAssessmentServiceImpl implements CreditAssessmentService {
     private final CreditCardResourceClient cardResourceClient;
 
     @Override
-    public ClientStatus getClientStatus(String nif) {
-        // get client card information
-        ResponseEntity<List<ClientCards>> cardDataResponse = cardResourceClient.getCreditCardsByClient(nif);
-        // get client details
-        ResponseEntity<ClientData> clientDataResponse = clientResourceClient.clientDetails(nif);
-        return ClientStatus
-                .builder()
-                .clientdata(clientDataResponse.getBody())
-                .cardsList(cardDataResponse.getBody())
-                .build();
+    public ClientStatus getClientStatus(String nif) throws MicroserviceErrorConnectionException {
+
+
+        try {
+            // get client card information
+            ResponseEntity<List<ClientCards>> cardDataResponse = cardResourceClient.getCreditCardsByClient(nif);
+            // get client details
+            ResponseEntity<ClientData> clientDataResponse = clientResourceClient.clientDetails(nif);
+            return ClientStatus
+                    .builder()
+                    .clientdata(clientDataResponse.getBody())
+                    .cardsList(cardDataResponse.getBody())
+                    .build();
+
+
+        }catch(feign.FeignException e){
+            throw new MicroserviceErrorConnectionException(e.getMessage());
+            //throw new MicroserviceErrorConnectionException("Microservice de clientes indisponível ");
+
+        }
+
     }
+
+
+
 }

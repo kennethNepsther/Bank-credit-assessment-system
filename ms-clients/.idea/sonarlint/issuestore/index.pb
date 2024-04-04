@@ -21,3 +21,15 @@ E
 ms-clients/.gitignore,b\7\b7655da7ed95f09943a505931d03a3b8f138dde3
 w
 Gms-clients/src/main/java/it/nepstherti/msclients/model/ClientModel.java,a\f\af4423269d553b5fccb0604fd78175de036a758b
+’
+bms-clients/src/main/java/it/nepstherti/msclients/exceptions/handller/ResourceExceptionHandler.java,9\d\9d05fa4eaf92298f0d40353c00a587d2b78b9d59
+„
+Tms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/StandardError.java,5\7\5724a283bf039972fcdd05d8ec9a94f2026ee618
+†
+Vms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/ValidationError.java,0\6\06e97814b0a1b798d50a9f070105f1f17df29371
+„
+Tms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/FieldMessages.java,8\4\84ece2006e3fe29578a0ec89d1f9561df00e1195
+•
+ems-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/RestClientTimeOutException.java,3\c\3cc853c7e5b84d2940a7acd6a06d04c5978ba786
+•
+ems-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/CredentialInvalidException.java,9\1\91a605ac4e2a8e0937d3384a4e381e02a86e32dc

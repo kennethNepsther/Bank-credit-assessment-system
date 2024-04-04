@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7366e3-ab5c-46bd-adda-4f279b9169f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/clients/CreditCardResourceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/0/6/06e97814b0a1b798d50a9f070105f1f17df29371" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/5/7/5724a283bf039972fcdd05d8ec9a94f2026ee618" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/8/4/84ece2006e3fe29578a0ec89d1f9561df00e1195" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/9/d/9d05fa4eaf92298f0d40353c00a587d2b78b9d59" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/0/6/06e97814b0a1b798d50a9f070105f1f17df29371" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/5/7/5724a283bf039972fcdd05d8ec9a94f2026ee618" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/8/4/84ece2006e3fe29578a0ec89d1f9561df00e1195" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/9/d/9d05fa4eaf92298f0d40353c00a587d2b78b9d59" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/FieldMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/StandardError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/ValidationError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/ObjectNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/exceptions/handller/ResourceExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/exception/MicroserviceErrorConnectionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/exception/controller/ResourceExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/exception/error/FieldMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/exception/error/StandardError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/service/IClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/service/IClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/serviceimpl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/serviceimpl/ClientServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/controller/AssessmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/controller/AssessmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/service/CreditAssessmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/service/CreditAssessmentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/serviceimpl/CreditAssessmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/serviceimpl/CreditAssessmentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

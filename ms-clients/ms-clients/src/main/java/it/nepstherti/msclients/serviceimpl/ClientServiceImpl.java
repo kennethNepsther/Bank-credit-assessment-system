@@ -1,6 +1,7 @@
 package it.nepstherti.msclients.serviceimpl;
 
 import it.nepstherti.msclients.dtos.response.ClientResponse;
+import it.nepstherti.msclients.exceptions.exception.ObjectNotFoundException;
 import it.nepstherti.msclients.model.ClientModel;
 import it.nepstherti.msclients.repository.IClientRepository;
 import it.nepstherti.msclients.service.IClientService;
@@ -28,18 +29,11 @@ public class ClientServiceImpl implements IClientService {
     public List<ClientModel> findAllClients() {
         return clientRepository.findAll();
     }
-    /*
-       @Override
-       public ClientModel findById(Long clientId) {
 
-           *Optional<ClientModel> client = clientRepository.findById(clientId);
-           return client.orElseThrow(() -> new ObjectNotFoundException("Não foi definido um orçamento com este id "));
-
-           return clientRepository.findById(clientId).orElseThrow(null);
-       }*/
     @Override
     public ClientResponse findClientById(Long clientId) {
-        ClientModel client = clientRepository.findById(clientId).orElseThrow(null);
+        ClientModel client = clientRepository.findById(clientId)
+                .orElseThrow(() -> new ObjectNotFoundException("Não foi encontrada nenhuma  informação de cliente com este NIF"));
         ClientResponse clientResponse = new ClientResponse();
         clientResponse.setId(client.getId());
         clientResponse.setFullName(client.getFullName());
@@ -49,7 +43,9 @@ public class ClientServiceImpl implements IClientService {
 
     @Override
     public ClientResponse findByNif(String nif) {
-        ClientModel client = clientRepository.findClientModelByNif(nif).orElseThrow(null);
+        ClientModel client = clientRepository.findClientModelByNif(nif)
+                .orElseThrow( () -> new ObjectNotFoundException(
+                        "Não foi encontrada nenhuma  informação de cliente com este NIF "+ nif));
         ClientResponse clientResponse = new ClientResponse();
         clientResponse.setId(client.getId());
         clientResponse.setNif(client.getNif());
