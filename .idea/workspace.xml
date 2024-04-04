@@ -5,11 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1010fef1-ace5-4e36-b624-d27a81c797ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ms-cloudgateway/.idea/sonarlint/issuestore/2/4/248fa70e664ec5b2e8de287aa6b4cfff9963afee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-cloudgateway/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-cloudgateway/.idea/sonarlint/securityhotspotstore/2/4/248fa70e664ec5b2e8de287aa6b4cfff9963afee" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-cloudgateway/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/main/java/it/nepstherti/mscards/MsCardsApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/main/java/it/nepstherti/mscards/controller/CardsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/main/java/it/nepstherti/mscards/enums/CardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/main/java/it/nepstherti/mscards/model/CreditCardModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/main/java/it/nepstherti/mscards/repository/ICreditCardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/main/java/it/nepstherti/mscards/service/CreditCardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/main/java/it/nepstherti/mscards/serviceImpl/CreditCardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-cards/src/test/java/it/nepstherti/mscards/MsCardsApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/a/f/af4423269d553b5fccb0604fd78175de036a758b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/securityhotspotstore/a/f/af4423269d553b5fccb0604fd78175de036a758b" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/1/b/1b540ccb345d4468bc0c6ec4e4e2a40b50579d65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/8/5/85c167d2ce6c7e17b51769a11bbc1f1bf3c0586d" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/8/5/85c167d2ce6c7e17b51769a11bbc1f1bf3c0586d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/9/d/9d5f91e5f952b225293fde9bf870ea07125f2335" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/b/8/b85769910b32f611483a35c5d498488aafcc62df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/e/1/e1cef3aa9bb563beadf2d0f0f97034ddc3cfdc15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/f/a/fad883955bae942647980ecf5a0b843405b18822" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/f/a/fad883955bae942647980ecf5a0b843405b18822" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/securityhotspotstore/1/b/1b540ccb345d4468bc0c6ec4e4e2a40b50579d65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/securityhotspotstore/9/d/9d5f91e5f952b225293fde9bf870ea07125f2335" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/securityhotspotstore/b/8/b85769910b32f611483a35c5d498488aafcc62df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/securityhotspotstore/e/1/e1cef3aa9bb563beadf2d0f0f97034ddc3cfdc15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-cloudgateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-cloudgateway/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,27 +81,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.EurekaserverApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Projects/Nepsther-projects/Avaliador-de-credito/ms-clients",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Nepsther-projects/Avaliador-de-credito/ms-clients&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="EurekaserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eurekaserver" />
@@ -102,7 +127,8 @@
       <option name="presentableId" value="Default" />
       <updated>1711495502688</updated>
       <workItem from="1711495503927" duration="696000" />
-      <workItem from="1711536152971" duration="8036000" />
+      <workItem from="1711536152971" duration="8839000" />
+      <workItem from="1711584908252" duration="1494000" />
     </task>
     <servers />
   </component>

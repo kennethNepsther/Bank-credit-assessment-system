@@ -1,9 +1,7 @@
 package it.nepstherti.mscards.dto;
 
 import it.nepstherti.mscards.model.ClientCardModel;
-import it.nepstherti.mscards.model.CreditCardModel;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+
 import lombok.Data;
 
 import java.math.BigDecimal;

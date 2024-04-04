@@ -6,7 +6,6 @@ import it.nepstherti.mscards.model.ClientCardModel;
 import it.nepstherti.mscards.model.CreditCardModel;
 import it.nepstherti.mscards.service.IClientCardService;
 import it.nepstherti.mscards.service.ICreditCardService;
-import it.nepstherti.mscards.serviceimpl.ClientCardService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

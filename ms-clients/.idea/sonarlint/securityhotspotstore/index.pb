@@ -3,16 +3,8 @@ B
 ms-clients/pom.xml,9\c\9cdd43b05afd41bc86402cf2c51e7d5d17aa8d75
 z
 Jms-clients/src/main/java/it/nepstherti/msclients/MsClientsApplication.java,7\e\7ec9da6039e2d111d4492360a636a2aefd09381b
-r
-Bms-clients/src/main/java/it/nepstherti/msclients/model/Client.java,b\8\b85769910b32f611483a35c5d498488aafcc62df
-p
-@ms-clients/src/main/java/it/nepstherti/msclients/controller.java,9\d\9d5f91e5f952b225293fde9bf870ea07125f2335
-Å
-Qms-clients/src/main/java/it/nepstherti/msclients/repository/ClientRepository.java,e\1\e1cef3aa9bb563beadf2d0f0f97034ddc3cfdc15
 Å
 Qms-clients/src/main/java/it/nepstherti/msclients/controller/ClientController.java,8\5\85c167d2ce6c7e17b51769a11bbc1f1bf3c0586d
-j
-:ms-clients/src/main/java/it/nepstherti/msclients/dtos.java,1\b\1b540ccb345d4468bc0c6ec4e4e2a40b50579d65
 Ä
 Pms-clients/src/main/java/it/nepstherti/msclients/dtos/request/ClientRequest.java,5\c\5cda98a467224bf9723aef307531436eacbfd8c2
 |
@@ -27,3 +19,5 @@ Bms-clients/src/main/java/it/nepstherti/msclients/util/UriUtil.java,d\4\d48fe6e
 Rms-clients/src/main/java/it/nepstherti/msclients/repository/IClientRepository.java,e\6\e688b03f02bf11ce3f1f57a86dac0576678dc411
 E
 ms-clients/.gitignore,b\7\b7655da7ed95f09943a505931d03a3b8f138dde3
+w
+Gms-clients/src/main/java/it/nepstherti/msclients/model/ClientModel.java,a\f\af4423269d553b5fccb0604fd78175de036a758b

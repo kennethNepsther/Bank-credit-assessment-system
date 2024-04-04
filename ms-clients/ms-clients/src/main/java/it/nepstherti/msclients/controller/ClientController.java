@@ -53,7 +53,6 @@ public class ClientController {
         URI uri = addIdToCurrentUrlPath(clientModel.getNif());
         log.info("Client {} saved successfully",clientModel.getFullName());
         return ResponseEntity.created(uri).body("salvo com sucesso!");
-
     }
 
     @PutMapping

@@ -52,6 +52,7 @@ public class ClientServiceImpl implements IClientService {
         ClientModel client = clientRepository.findClientModelByNif(nif).orElseThrow(null);
         ClientResponse clientResponse = new ClientResponse();
         clientResponse.setId(client.getId());
+        clientResponse.setNif(client.getNif());
         clientResponse.setFullName(client.getFullName());
         clientResponse.setAge(calculateAge(client.getBirthDate()));
         return clientResponse;
