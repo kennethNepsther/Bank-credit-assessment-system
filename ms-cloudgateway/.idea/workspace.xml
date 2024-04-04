@@ -4,45 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c7366e3-ab5c-46bd-adda-4f279b9169f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/MsCreditAssessmentApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/clients/ClientResourceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/controller/AssessmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/domain/ClientCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/domain/ClientData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/domain/ClientStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/service/CreditAssessmentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/serviceimpl/CreditAssessmentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/test/java/it/nepstherti/mscreditassessment/MsCreditAssessmentApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/dto/ClientCardResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/dto/ClientCardResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/1/b/1b540ccb345d4468bc0c6ec4e4e2a40b50579d65" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/1/d/1d59a589dfe8e817e58f0512719b3cc511e2e8e5" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/1/d/1d59a589dfe8e817e58f0512719b3cc511e2e8e5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/5/c/5cda98a467224bf9723aef307531436eacbfd8c2" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/5/c/5cda98a467224bf9723aef307531436eacbfd8c2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/8/5/85c167d2ce6c7e17b51769a11bbc1f1bf3c0586d" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/8/5/85c167d2ce6c7e17b51769a11bbc1f1bf3c0586d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/9/d/9d5f91e5f952b225293fde9bf870ea07125f2335" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/b/8/b85769910b32f611483a35c5d498488aafcc62df" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/e/1/e1cef3aa9bb563beadf2d0f0f97034ddc3cfdc15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/f/a/fad883955bae942647980ecf5a0b843405b18822" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/f/a/fad883955bae942647980ecf5a0b843405b18822" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/1/b/1b540ccb345d4468bc0c6ec4e4e2a40b50579d65" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/9/d/9d5f91e5f952b225293fde9bf870ea07125f2335" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/b/8/b85769910b32f611483a35c5d498488aafcc62df" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/e/1/e1cef3aa9bb563beadf2d0f0f97034ddc3cfdc15" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/serviceimpl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/ms-clients/src/main/java/it/nepstherti/msclients/serviceimpl/ClientServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-cloudgateway/src/main/java/it/nepstherti/mscloudgateway/MsCloudgatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-cloudgateway/src/main/java/it/nepstherti/mscloudgateway/MsCloudgatewayApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="9c7366e3-ab5c-46bd-adda-4f279b9169f5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
