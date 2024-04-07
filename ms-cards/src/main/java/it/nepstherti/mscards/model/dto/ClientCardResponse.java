@@ -1,4 +1,4 @@
-package it.nepstherti.mscards.dto;
+package it.nepstherti.mscards.model.dto;
 
 import it.nepstherti.mscards.model.ClientCardModel;
 

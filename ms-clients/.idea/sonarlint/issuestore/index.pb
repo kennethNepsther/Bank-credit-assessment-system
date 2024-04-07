@@ -29,9 +29,5 @@ Tms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/StandardError
 Vms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/ValidationError.java,0\6\06e97814b0a1b798d50a9f070105f1f17df29371
 „
 Tms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/FieldMessages.java,8\4\84ece2006e3fe29578a0ec89d1f9561df00e1195
-•
-ems-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/RestClientTimeOutException.java,3\c\3cc853c7e5b84d2940a7acd6a06d04c5978ba786
-•
-ems-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/CredentialInvalidException.java,9\1\91a605ac4e2a8e0937d3384a4e381e02a86e32dc
 ’
 bms-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/ObjectNotFoundException.java,c\2\c2362aa946dc9253a7f97532df1701831293f25d

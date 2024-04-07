@@ -18,6 +18,8 @@ target/
 *.iws
 *.iml
 *.ipr
+../ms-clients/.idea/sonarlint/
+ .gitignore
 
 ### NetBeans ###
 /nbproject/private/

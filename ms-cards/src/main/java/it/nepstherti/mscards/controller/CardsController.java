@@ -1,7 +1,7 @@
 package it.nepstherti.mscards.controller;
 
-import it.nepstherti.mscards.dto.ClientCardResponse;
-import it.nepstherti.mscards.dto.CreditCardSaveRequest;
+import it.nepstherti.mscards.model.dto.ClientCardResponse;
+import it.nepstherti.mscards.model.dto.CreditCardSaveRequest;
 import it.nepstherti.mscards.model.ClientCardModel;
 import it.nepstherti.mscards.model.CreditCardModel;
 import it.nepstherti.mscards.service.IClientCardService;

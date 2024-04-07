@@ -1,4 +1,4 @@
-package it.nepstherti.mscards.messaging;
+package it.nepstherti.mscards.config.messaging;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;

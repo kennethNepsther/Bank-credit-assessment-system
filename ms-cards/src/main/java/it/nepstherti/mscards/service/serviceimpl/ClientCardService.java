@@ -1,4 +1,4 @@
-package it.nepstherti.mscards.serviceimpl;
+package it.nepstherti.mscards.service.serviceimpl;
 
 import it.nepstherti.mscards.model.ClientCardModel;
 import it.nepstherti.mscards.repository.IClientCardRepository;
