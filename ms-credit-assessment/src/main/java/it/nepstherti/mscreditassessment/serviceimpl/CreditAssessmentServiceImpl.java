@@ -3,7 +3,9 @@ package it.nepstherti.mscreditassessment.serviceimpl;
 import feign.FeignException;
 import it.nepstherti.mscreditassessment.clients.ClientResourceClient;
 import it.nepstherti.mscreditassessment.clients.CreditCardResourceClient;
+import it.nepstherti.mscreditassessment.config.messaging.CardRequestIssuancePublisher;
 import it.nepstherti.mscreditassessment.domain.*;
+import it.nepstherti.mscreditassessment.exception.IssueCardException;
 import it.nepstherti.mscreditassessment.exception.MicroserviceErrorConnectionException;
 import it.nepstherti.mscreditassessment.exception.ObjectNotFoundException;
 import it.nepstherti.mscreditassessment.service.CreditAssessmentService;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Service
@@ -21,6 +24,7 @@ public class CreditAssessmentServiceImpl implements CreditAssessmentService {
 
     private final ClientResourceClient clientResourceClient;
     private final CreditCardResourceClient cardResourceClient;
+    private final CardRequestIssuancePublisher cardRequestIssuancePublisher;
 
     @Override
     public ClientStatus getClientStatus(String nif) throws MicroserviceErrorConnectionException {
@@ -75,7 +79,7 @@ public class CreditAssessmentServiceImpl implements CreditAssessmentService {
                 approvedCreditCard.setApprovedBaseline(baselineApproved);
 
                 return approvedCreditCard;
-            }).collect(Collectors.toList());
+            }).toList();
 
             return new  ClientEvaluationResponse(approvedCards);
 
@@ -93,5 +97,15 @@ public class CreditAssessmentServiceImpl implements CreditAssessmentService {
 
     }
 
+    public  IssueProtocolCard cardRequestIssuance(CardRequestDetails details){
+        try{
+            cardRequestIssuancePublisher.requestIssuance(details);
+            var protocol = UUID.randomUUID().toString();
+            return new IssueProtocolCard(protocol);
+        }catch (Exception e){
+            throw  new IssueCardException(e.getMessage());
+
+        }
+    }
 
 }

@@ -5,22 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7366e3-ab5c-46bd-adda-4f279b9169f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/config/messaging/CardIssuanceSubscriber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/MsCardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/MsCardsApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/dto/ClientCardResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/model/dto/ClientCardResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/dto/CreditCardSaveRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/model/dto/CreditCardSaveRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/serviceimpl/ClientCardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/service/serviceimpl/ClientCardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/serviceimpl/CreditCardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/service/serviceimpl/CreditCardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/3/c/3cc853c7e5b84d2940a7acd6a06d04c5978ba786" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/9/1/91a605ac4e2a8e0937d3384a4e381e02a86e32dc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/3/c/3cc853c7e5b84d2940a7acd6a06d04c5978ba786" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/9/1/91a605ac4e2a8e0937d3384a4e381e02a86e32dc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-clients/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/model/CardRequestDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/config/messaging/CardRequestIssuancePublisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/config/messaging/MQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/domain/CardRequestDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/domain/IssueProtocolCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/exception/IssueCardException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-cards/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/config/messaging/CardIssuanceSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/config/messaging/CardIssuanceSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-cloudgateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ms-cloudgateway/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/MsCreditAssessmentApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/MsCreditAssessmentApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/controller/AssessmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/controller/AssessmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/domain/ClientEvaluationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/domain/ClientEvaluationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/service/CreditAssessmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/service/CreditAssessmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/serviceimpl/CreditAssessmentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/java/it/nepstherti/mscreditassessment/serviceimpl/CreditAssessmentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ms-credit-assessment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-credit-assessment/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +108,7 @@
       <workItem from="1711584918502" duration="1546000" />
       <workItem from="1712003397751" duration="3633000" />
       <workItem from="1712235531618" duration="3808000" />
-      <workItem from="1712488841339" duration="1169000" />
+      <workItem from="1712488841339" duration="2889000" />
     </task>
     <servers />
   </component>

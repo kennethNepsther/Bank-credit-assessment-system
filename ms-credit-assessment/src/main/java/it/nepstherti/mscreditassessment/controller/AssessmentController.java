@@ -1,8 +1,7 @@
 package it.nepstherti.mscreditassessment.controller;
 
-import it.nepstherti.mscreditassessment.domain.ClientEvaluationResponse;
-import it.nepstherti.mscreditassessment.domain.ClientStatus;
-import it.nepstherti.mscreditassessment.domain.EvaluationData;
+import it.nepstherti.mscreditassessment.domain.*;
+import it.nepstherti.mscreditassessment.exception.IssueCardException;
 import it.nepstherti.mscreditassessment.service.CreditAssessmentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -22,11 +21,20 @@ public class AssessmentController {
 
     }
 @PostMapping
-    public ResponseEntity clientEvaluation(@RequestBody EvaluationData evaluationData){
+    public ResponseEntity<ClientEvaluationResponse> clientEvaluation(@RequestBody EvaluationData evaluationData){
         ClientEvaluationResponse clientEvaluationResponse = assessmentService.getClientEvaluation(evaluationData.getNif(),
                 evaluationData.getIncome());
         return ResponseEntity.ok(clientEvaluationResponse);
 
 
+    }
+    @PostMapping("/issue-card")
+    public ResponseEntity<?> issueCard(@RequestBody CardRequestDetails details){
+        try{
+            IssueProtocolCard issueProtocolCard = assessmentService.cardRequestIssuance(details);
+            return  ResponseEntity.ok(issueProtocolCard);
+        }catch (IssueCardException e){
+            return ResponseEntity.internalServerError().body(e.getMessage());
+        }
     }
 }

@@ -21,6 +21,7 @@ target/
 ../ms-clients/.idea/sonarlint/
  .gitignore
 
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
