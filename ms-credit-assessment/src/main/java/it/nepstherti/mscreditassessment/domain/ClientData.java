@@ -16,5 +16,6 @@ import java.io.Serializable;
 public class ClientData {  // Dados do cliente
     private Long id;
     private String fullName;
+    private Integer age;
 
 }

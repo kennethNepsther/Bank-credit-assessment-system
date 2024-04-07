@@ -33,3 +33,5 @@ Tms-clients/src/main/java/it/nepstherti/msclients/exceptions/error/FieldMessages
 ems-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/RestClientTimeOutException.java,3\c\3cc853c7e5b84d2940a7acd6a06d04c5978ba786
 •
 ems-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/CredentialInvalidException.java,9\1\91a605ac4e2a8e0937d3384a4e381e02a86e32dc
+’
+bms-clients/src/main/java/it/nepstherti/msclients/exceptions/exception/ObjectNotFoundException.java,c\2\c2362aa946dc9253a7f97532df1701831293f25d
