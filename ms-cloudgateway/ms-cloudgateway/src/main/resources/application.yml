@@ -7,6 +7,12 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/Appcreditassessment
+
 server:
   port: 9091
 
@@ -15,4 +21,6 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-user:e08449248ad62d3a132197cea5fddbba@localhost:8761/eureka
+
+      #defaultZone: http://localhost:8761/eureka
