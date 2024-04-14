@@ -6,12 +6,13 @@ import it.nepstherti.mscards.model.ClientCardModel;
 import it.nepstherti.mscards.repository.IClientCardRepository;
 import it.nepstherti.mscards.repository.ICreditCardRepository;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
 
-
+@Slf4j
 @Component
 @RequiredArgsConstructor
 public class CardIssuanceSubscriber {
@@ -33,7 +34,7 @@ public class CardIssuanceSubscriber {
 
 
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error("Erro a receber a solicitação de emissão de  cartão: {} ", e.getMessage());
         }
     }
 }
