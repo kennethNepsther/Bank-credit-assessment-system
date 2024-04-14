@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c7366e3-ab5c-46bd-adda-4f279b9169f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../eurekaserver/src/main/java/it/nepstherti/eurekaserver/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eurekaserver/src/main/java/it/nepstherti/eurekaserver/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eurekaserver/src/main/java/it/nepstherti/eurekaserver/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../eurekaserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/config/messaging/CardIssuanceSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/java/it/nepstherti/mscards/config/messaging/CardIssuanceSubscriber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ms-cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ms-cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-cloudgateway/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ms-cloudgateway/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-cloudgateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-cloudgateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-cloudgateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-cloudgateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +102,7 @@
       <workItem from="1712961581878" duration="91000" />
       <workItem from="1712961693271" duration="1570000" />
       <workItem from="1713055867464" duration="111000" />
-      <workItem from="1713055995491" duration="1748000" />
+      <workItem from="1713055995491" duration="2268000" />
     </task>
     <servers />
   </component>

@@ -20,6 +20,7 @@ target/
 *.iml
 *.ipr
 .idea/
+.idea/workspace.xml
 .gitignore
 
 ### NetBeans ###
@@ -34,3 +35,4 @@ build/
 
 ### VS Code ###
 .vscode/
+
