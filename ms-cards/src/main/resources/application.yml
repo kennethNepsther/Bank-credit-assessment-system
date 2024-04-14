@@ -12,7 +12,8 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://eureka-user:e08449248ad62d3a132197cea5fddbba@localhost:8761/eureka
+#      defaultZone: http://localhost:8761/eureka --> sem autenticação no eureka
   instance:
     instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
 

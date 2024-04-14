@@ -1,6 +1,5 @@
 package it.nepstherti.mscards.config.messaging;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import it.nepstherti.mscards.model.CardRequestDetails;
 import it.nepstherti.mscards.model.ClientCardModel;
