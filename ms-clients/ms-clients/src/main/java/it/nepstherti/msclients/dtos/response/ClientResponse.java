@@ -25,10 +25,9 @@ public class ClientResponse {
     }
 
     public  int calculateAge(LocalDate birthDate) {
-        //String dataNascimentoStr = "1990-05-15";
-        LocalDate dataAtual = LocalDate.now();
-        Period age = Period.between(birthDate, dataAtual);
-        return age.getYears();
+        LocalDate date = LocalDate.now();
+        Period period = Period.between(birthDate, date);
+        return period.getYears();
 
 
     }

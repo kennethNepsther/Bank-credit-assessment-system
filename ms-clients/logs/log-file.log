@@ -1,0 +1,2 @@
+2024-04-16T00:08:03.866+01:00  WARN 23720 --- [ms-clients] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m23s214ms944µs800ns).
+2024-04-16T00:08:04.463+01:00  INFO 23720 --- [ms-clients] [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

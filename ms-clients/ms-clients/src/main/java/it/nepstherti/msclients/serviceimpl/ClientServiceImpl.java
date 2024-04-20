@@ -7,7 +7,7 @@ import it.nepstherti.msclients.repository.IClientRepository;
 import it.nepstherti.msclients.service.IClientService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -30,20 +30,24 @@ public class ClientServiceImpl implements IClientService {
         return clientRepository.findAll();
     }
 
-    @Override
-    public ClientResponse findClientById(Long clientId) {
-        ClientModel client = clientRepository.findById(clientId)
-                .orElseThrow(() -> new ObjectNotFoundException("Não foi encontrada nenhuma  informação de cliente com este NIF"));
-        ClientResponse clientResponse = new ClientResponse();
-        clientResponse.setId(client.getId());
-        clientResponse.setFullName(client.getFullName());
-        clientResponse.setAge(calculateAge(client.getBirthDate()));
-        return clientResponse;
-    }
+
 
     @Override
     public ClientResponse findByNif(String nif) {
-        ClientModel client = clientRepository.findClientModelByNif(nif)
+        return clientRepository.findClientModelByNif(nif)
+                .map(client -> {
+                    ClientResponse clientResponse = new ClientResponse();
+                    clientResponse.setId(client.getId());
+                    clientResponse.setNif(client.getNif());
+                    clientResponse.setFullName(client.getFullName());
+                    clientResponse.setAge(calculateAge(client.getBirthDate()));
+                    return clientResponse;
+                })
+                .orElseThrow(() -> new ObjectNotFoundException(
+                        "Não foi encontrada nenhuma informação de cliente com este NIF " + nif));
+
+        /*
+         * ClientModel client = clientRepository.findClientModelByNif(nif)
                 .orElseThrow( () -> new ObjectNotFoundException(
                         "Não foi encontrada nenhuma  informação de cliente com este NIF "+ nif));
         ClientResponse clientResponse = new ClientResponse();
@@ -51,7 +55,8 @@ public class ClientServiceImpl implements IClientService {
         clientResponse.setNif(client.getNif());
         clientResponse.setFullName(client.getFullName());
         clientResponse.setAge(calculateAge(client.getBirthDate()));
-        return clientResponse;
+        return clientResponse;*/
+
     }
 
     @Override
@@ -65,8 +70,9 @@ public class ClientServiceImpl implements IClientService {
     }
 
     @Override
-    public Page<ClientModel> paginatedAllClient(int page, int pageSize) {
-        return clientRepository.findAll(PageRequest.of(page, pageSize));
+    public Page<ClientModel> paginatedAllClient(Pageable pageable) {
+        //Sort sort = Sort.by(pageable.getSort().getOrderFor("id") != null ? pageable.getSort().getOrderFor("id").getDirection() : Sort.Direction.ASC, "id");
+        return clientRepository.findAll(pageable);
     }
 
     public  int calculateAge(LocalDate birthDate) {

@@ -5,12 +5,12 @@ import it.nepstherti.msclients.dtos.response.ClientResponse;
 import it.nepstherti.msclients.model.ClientModel;
 import it.nepstherti.msclients.service.IClientService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Positive;
-import jakarta.validation.constraints.PositiveOrZero;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,14 +32,6 @@ public class ClientController {
         List<ClientModel> clients = clientService.findAllClients();
         return ResponseEntity.ok(clients.stream().map(ClientResponse::new).toList());
     }
-
-   /*
-   *
-     @GetMapping("/{clientId}")
-    public ResponseEntity<ClientResponse> findById(@PathVariable Long clientId) {
-        ClientResponse client = clientService.findById(clientId);
-        return ResponseEntity.ok((client));
-    }*/
 
     @GetMapping("/{nif}")
     public ResponseEntity<ClientResponse> findByNif(@PathVariable String nif) {
@@ -63,11 +55,9 @@ public class ClientController {
     }
 
     @GetMapping("/client/paginated")
-    public ResponseEntity<Page<ClientModel>> clientPaginated(@RequestParam(defaultValue = "0")
-                                                             @PositiveOrZero int page,
-                                                             @RequestParam(defaultValue = "5")
-                                                             @Positive @Max(10) int pageSize) {
-        return ResponseEntity.ok(clientService.paginatedAllClient(page, pageSize));
+    public ResponseEntity<Page<ClientModel>> clientPaginated(@PageableDefault(size = 5, sort = "id", direction = Sort.Direction.ASC )
+                                                                 Pageable pageable){
+        return ResponseEntity.ok(clientService.paginatedAllClient(pageable));
     }
 
     @DeleteMapping("/{nif}")
