@@ -2,20 +2,29 @@ spring:
   application:
     name: ms-cards
   rabbitmq:
-    host: localhost
+    host: ${RABBITMQ_SERVER}  #rabbitmq  #localhost
     port: 5672
     username: guest
     password: guest
-
 server:
   port: 0
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka-user:e08449248ad62d3a132197cea5fddbba@localhost:8761/eureka
-#      defaultZone: http://localhost:8761/eureka --> sem autenticação no eureka
+      defaultZone: http://eureka-user:12345@${EUREKA-SERVER}:8761/eureka
+      #defaultZone: http://eureka-user:12345@localhost:8761/eureka  com autenticação no eureka
+      #defaultZone: http://localhost:8761/eureka --> sem autenticação no eureka
   instance:
     instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+logging:
+  file:
+    name: ./logs/log-file.log
 
 mq:
   queues:

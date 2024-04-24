@@ -1,12 +1,6 @@
 spring:
   application:
-    name: ms-credit-assessment
-  rabbitmq:
-    host: ${RABBITMQ_SERVER} #localhost
-    port: 5672
-    username: guest
-    password: guest
-
+    name: ms-clients
 server:
   port: 0
 eureka:
@@ -15,7 +9,8 @@ eureka:
       defaultZone: http://eureka-user:12345@${EUREKA_SERVER}:8761/eureka
       #defaultZone: http://localhost:8761/eureka
   instance:
-    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${random.value}}
+   instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
 
 management:
   endpoints:
@@ -25,7 +20,3 @@ management:
 logging:
   file:
     name: ./logs/log-file.log
-
-mq:
-  queues:
-    emissao-cartoes: emissao-cartoes
