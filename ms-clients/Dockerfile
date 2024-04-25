@@ -11,4 +11,5 @@ COPY  --from=build /app/target/*.jar ./msclients.jar
 ARG EUREKA_SERVER=localhost
 #===========================
 
-ENTRYPOINT java -jar msclients.jar
+ENTRYPOINT java -jar -Dspring.profiles.active=production msclients.jar
+#ENTRYPOINT java -jar msclients.jar
